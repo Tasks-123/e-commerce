@@ -32,3 +32,7 @@
     justify-content: center;
     align-items: center;
 }
+
+#category {
+    background-image: url('../images/category-background.webp');
+}

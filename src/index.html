@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <nav class="bg-white w-full fixed uppercase z-20 top-0 start-0">
+    <nav class="bg-white w-full fixed uppercase z-50 top-0 start-0">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <div class="flex md:order-3 space-x-3 md:space-x-0 rtl:space-x-reverse">
 
@@ -97,11 +97,7 @@
             </div>
         </div>
 
-        <div class="relative gradient-primary overflow-hidden  my-[20px]  w-[80%] mx-auto h-[225px] rounded-t-[15px]">
-
-
-
-
+        <div class="relative gradient-primary overflow-hidden  my-[20px]  w-[75%] mx-auto h-[225px] rounded-t-[15px] -translate-y-[70px]">
             <div class="grid grid-cols-6 h-full px-[80px]">
                 <div class="col-span-6 md:col-span-4 h-full">
                     <div class="flex items-center justify-around h-full ms-10">
@@ -127,20 +123,63 @@
                 </div>
             </div>
 
+            <img class="absolute left-0 top-0 object-cover" src="./assets/images/vase-border.png" alt="border-shape">
 
-
-
-
-
-
-
-            <img class="absolute left-0 top-0 object-cover z-50" src="./assets/images/vase-border.png"
-                alt="border-shape">
-
-            <img class="absolute right-0 top-0 object-cover z-50" src="./assets/images/border-shape-right.png"
+            <img class="absolute right-0 top-0 object-cover" src="./assets/images/border-shape-right.png"
                 alt="border-shape">
         </div>
     </main>
+
+    <section class="relative" id="category">
+        <div class="w-[50%] flex items-center justify-center space-x-[45px] mb-[70px] mx-auto">
+            <p class="capitalize text-5xl ">furniture <span class="text-gradient">category</span> </p>
+
+            <img src="./assets/images/furniture-category.png" alt="furniture-category">
+        </div>
+        <div class="grid grid-cols-12 gap-7 w-[75%] mx-auto">
+            <div class="col-span-3">
+                <div class="relative">
+                    <p class="absolute top-[15px] left-0 gradient-primary py-[18px] px-[25px] capitalize rounded-r-[10px] font-semibold text-white text-3xl">tables</p>
+                    <img class="w-full h-full" src="./assets/images/table.webp" alt="table">
+                </div>
+            </div>
+            <div class="col-span-9">
+                <div class="relative w-full h-full">
+                    <p class="absolute top-[15px] left-0 gradient-primary py-[18px] px-[25px] capitalize rounded-r-[10px] font-semibold text-white text-3xl">lamps</p>
+                    <img class="w-full h-full" src="./assets/images/lamp.webp" alt="lamp">
+                </div>
+            </div>
+            <div class="col-span-6 row-span-2">
+                <div class="relative">
+                    <p class="absolute top-[15px] left-0 gradient-primary py-[18px] px-[25px] capitalize rounded-r-[10px] font-semibold text-white text-3xl">figure</p>
+                    <img class="w-full h-full" src="./assets/images/figure.webp" alt="figure">
+                </div>
+            </div>
+
+            <div class="col-span-3">
+                <div class="relative">
+                    <p class="absolute top-[15px] left-0 gradient-primary py-[18px] px-[25px] capitalize rounded-r-[10px] font-semibold text-white text-3xl">candlesticks</p>
+                    <img class="w-full h-full" src="./assets/images/candlesticks.webp" alt="candlesticks">
+                </div>
+            </div>
+
+            <div class="col-span-3 row-span-2">
+                <div class="relative bg-[#F9A2BA]">
+                    <p class="absolute top-[15px] left-0 gradient-primary py-[18px] px-[25px] capitalize rounded-r-[10px] font-semibold text-white text-3xl">chairs</p>
+                    <img class="w-full h-full" src="./assets/images/chair.webp" alt="chair">
+                </div>
+            </div>
+
+            <div class="col-span-3">
+                <div class="relative">
+                    <p class="absolute top-[15px] left-0 gradient-primary py-[18px] px-[25px] capitalize rounded-r-[10px] font-semibold text-white text-3xl">living rooms</p>
+                    <img class="w-full h-full" src="./assets/images/living-room.webp" alt="living-room">
+                </div>
+            </div>
+        </div>
+
+        <img src="./assets/images/Looper.webp" alt="" class="absolute -top-[280px] -left-10 -z-10">
+    </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
