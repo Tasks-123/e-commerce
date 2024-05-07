@@ -59,3 +59,8 @@
     background-image: url('../images/question-bg.webp');
     height: 1200px;
 }
+
+#best-selling {
+    background-image: url('../images/best-products-bg.webp');
+
+}
