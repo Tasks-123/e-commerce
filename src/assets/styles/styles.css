@@ -36,3 +36,18 @@
 #category {
     background-image: url('../images/category-background.webp');
 }
+
+.accordion-container {
+    transition: transform 500ms;
+    transform: translateY(0);
+    z-index: 1;
+}
+
+.accordion-content {
+    z-index: 2;
+}
+
+#frequent-questions {
+    background-image: url('../images/question-bg.webp');
+    height: 1200px;
+}
