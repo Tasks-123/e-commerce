@@ -80,14 +80,31 @@
                     Fashion is part of the daily air and it changes all the time, with all the events.
                 </p>
 
-                <div class="flex justify-between items-center w-[70%] ms-5 mt-11">
+                <div class="flex  justify-between items-center w-[70%] ms-5 mt-11">
                     <p class="text-gradient capitalize text-2xl font-semibold w-24 leading-10"> <span
                             class="font-medium text-5xl">25%</span> off new arrivels</p>
                     <img src="./assets/images/discount-arrow.webp" alt="arrow">
 
-                    <p class="text-gradient uppercase text-2xl font-semibold -translate-y-3 leading-10">buy now</p>
+                    <div class="relative try  flex justify-between items-center space-x-3 py-2 px-3">
+                        <div class="buy absolute left-0 top-0 w-0 h-0   -translate-y-3">
 
-                    <img class="-translate-y-3" src="./assets/images/cart-border.svg" alt="cart">
+                        </div>
+                        <p class="text-gradient uppercase text-2xl font-semibold -translate-y-3 leading-10">buy now
+                        </p>
+                        <img class="img1 -translate-y-3" src="./assets/images/cart-border.svg" alt="cart">
+                        <img class="img2 -translate-y-3 hidden" src="./assets/images/cart.svg" alt="cart">
+                    </div>
+
+                    <style>
+                        .try:hover .img1 {
+                            display: none;
+                        }
+                    
+                        .try:hover .img2 {
+                            display: block;
+                        }
+                    </style>
+
                 </div>
 
                 <div class="ms-[72px] mt-[50px] space-x-[20px] flex items-end">
@@ -195,26 +212,20 @@
     <section id="best-selling" class="mt-[120px]">
         <div class="center space-x-[25px]">
             <img src="./assets/images/best-products.webp" alt="">
-            <h1 class="text-5xl capitalize"> <span class="text-gradient">Best</span>  selling products </h1>
+            <h1 class="text-5xl capitalize"> <span class="text-gradient">Best</span> selling products </h1>
         </div>
 
         <div class="w-[80%] mx-auto">
-            <div class="grid grid-cols-12  gap-x-[124px]  gap-y-[124px] ">
+            <div class="products grid grid-cols-12  gap-x-[124px]  gap-y-[124px] justify-center py-20">
 
-                <div class="col-span-12 md:col-span-6 lg:col-span-3 relative">
-                    <div class="gradient-primary w-full h-[340px] rounded-lg ">
+                <div class="card col-span-12 md:col-span-6 h-[340px] lg:col-span-3 relative">
+                    <div class="container gradient-primary w-full h-full rounded-lg ">
                         <img src="./assets/images/chair-card.png" alt="chair" class="">
-                        <h1 class="uppercase ">chair</h1>
+                        <h1 class="uppercase font-semibold opacity-50 text-5xl text-center">chair</h1>
                     </div>
                 </div>
 
-                <div class="col-span-12 md:col-span-6 lg:col-span-3">
-                    <div class="gradient-primary w-full h-[340px] rounded-lg ">
-                        <img src="./assets/images/chair-card.png" alt="chair" class="">
-                    </div>
-                </div>
-
-                <div class="col-span-12 md:col-span-6 lg:col-span-3">
+                <div class="card col-span-12 md:col-span-6 lg:col-span-3">
                     <div class="gradient-primary w-full h-[340px] rounded-lg ">
                         <img src="./assets/images/chair-card.png" alt="chair" class="">
                     </div>
@@ -226,6 +237,17 @@
                     </div>
                 </div>
 
+                <div class="col-span-12 md:col-span-6 lg:col-span-3">
+                    <div class="gradient-primary w-full h-[340px] rounded-lg ">
+                        <img src="./assets/images/chair-card.png" alt="chair" class="">
+                    </div>
+                </div>
+
+                <div class="col-span-12 md:col-span-6 lg:col-span-3  ">
+                    <div class="gradient-primary w-full h-[340px] rounded-lg ">
+                        <img src="./assets/images/chair-card.png" alt="chair" class="">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
