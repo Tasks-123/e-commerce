@@ -58,6 +58,7 @@
     width: 100%;
     height: 100%;
 }
+
 .try:hover p {
     color: white;
 }
@@ -109,4 +110,102 @@
 
 #best-selling {
     background-image: url('../images/best-products-bg.webp');
+}
+
+
+
+
+.contain {
+    position: relative;
+
+}
+
+.contain .card1 {
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.contain .card1:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(93, 136, 187);
+    background: -moz-linear-gradient(90deg, rgba(93, 136, 187, 1) 0%, rgba(47, 215, 205, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(93, 136, 187, 1) 0%, rgba(47, 215, 205, 1) 100%);
+    background: linear-gradient(90deg, rgba(93, 136, 187, 1) 0%, rgba(47, 215, 205, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5d88bb", endColorstr="#2fd7cd", GradientType=1);
+    clip-path: circle(450px at 80% 20%);
+    transition: 0.5s ease-in-out
+}
+
+.contain .card1:hover:before {
+    clip-path: circle(180px at 50% 5%);
+}
+
+.contain .card1:after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: -20%;
+
+}
+
+.contain .card1 .imgbox {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: 100%;
+    height: 370px;
+    transition: 0.5s ease-in-out
+}
+
+.contain .card1:hover .imgbox {
+    top: 0;
+    transform: translateY(0);
+}
+
+.contain .card1 .imgbox img {
+    transition: all 0.5s ease-in-out;
+}
+
+.contain .card1:hover .imgbox img {
+    rotate: 30deg;
+
+}
+.contain:hover {
+    height: 450px;
+}
+
+.contain .card1 .content-box {
+    position: absolute;
+    bottom: -44%;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    transition: 1s;
+    z-index: 1;
+}
+
+.card1:hover h1{
+    display: none;
+}
+
+.contain .card1:hover .content-box {
+    height: 300px;
+    bottom: -20%;
+}
+
+.sized-product {
+    border-width: 1px;
+    border-color: rgba(93, 136, 187, 1);
+    border-radius: 5px;
+}
+
+.size {
+    height: 130px;
 }

@@ -13,7 +13,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="overflow-x-hidden">
     <nav class="bg-white w-full fixed uppercase z-50 top-0 start-0">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <div class="flex md:order-3 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -85,7 +85,7 @@
                             class="font-medium text-5xl">25%</span> off new arrivels</p>
                     <img src="./assets/images/discount-arrow.webp" alt="arrow">
 
-                    <div class="relative try  flex justify-between items-center space-x-3 py-2 px-3">
+                    <a href="#" class="relative try  flex justify-between items-center space-x-3 py-2 px-3">
                         <div class="buy absolute left-0 top-0 w-0 h-0   -translate-y-3">
 
                         </div>
@@ -93,13 +93,13 @@
                         </p>
                         <img class="img1 -translate-y-3" src="./assets/images/cart-border.svg" alt="cart">
                         <img class="img2 -translate-y-3 hidden" src="./assets/images/cart.svg" alt="cart">
-                    </div>
+                    </a>
 
                     <style>
                         .try:hover .img1 {
                             display: none;
                         }
-                    
+
                         .try:hover .img2 {
                             display: block;
                         }
@@ -215,44 +215,317 @@
             <h1 class="text-5xl capitalize"> <span class="text-gradient">Best</span> selling products </h1>
         </div>
 
+        <div class="contain w-16">
+            <div class="card1">
+                <div class="imgbox">
+                    <img src="./assets/images/chair-card.png" alt="chair">
+                </div>
+                <div class="content-box">
+                    <h2>Nike shoes</h2>
+                    <div class="size">
+                        <h3>Size</h3>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                    </div>
+
+                    <div class="color">
+                        <h3>Color </h3>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                    </div>
+
+                    <a href="#" class="btn">Buy now</a>
+                </div>
+            </div>
+        </div>
+
+
+
         <div class="w-[80%] mx-auto">
             <div class="products grid grid-cols-12  gap-x-[124px]  gap-y-[124px] justify-center py-20">
 
-                <div class="card col-span-12 md:col-span-6 h-[340px] lg:col-span-3 relative">
-                    <div class="container gradient-primary w-full h-full rounded-lg ">
-                        <img src="./assets/images/chair-card.png" alt="chair" class="">
-                        <h1 class="uppercase font-semibold opacity-50 text-5xl text-center">chair</h1>
+                <div class="card col-span-12 md:col-span-6 lg:col-span-3">
+                    <div class="contain gradient-primary w-full h-[340px]  rounded-lg  shadow-xl">
+                        <div class="card1 h-[100%] w-[100%] rounded-lg">
+                            <div class="imgbox">
+                                <img src="./assets/images/chair-card.png" alt="chair">
+                                <h1 class="uppercase font-semibold opacity-50 text-5xl text-center">chair</h1>
+                            </div>
+                            <div class="content-box space-y-3  px-4">
+                                <div class="flex items-center justify-between">
+                                    <p class="capitalize">chair</p>
+                                    <h2 class="text-gradient text-end">$240.99</h2>
+                                </div>
+                                <div class="size space-y-3 mb-10">
+                                    <h3 class="text-start">selected Size</h3>
+                                    <div class="grid grid-cols-12 gap-2">
+                                        <div class="sized-product col-span-3 uppercase">uk1</div>
+                                        <div class="sized-product col-span-3 uppercase">uk2</div>
+                                        <div class="sized-product col-span-3 uppercase">uk3</div>
+                                        <div class="sized-product col-span-3 uppercase">uk4</div>
+                                        <div class="sized-product col-span-3 uppercase">uk5</div>
+                                        <div class=" sized-product col-span-3 uppercase">uk6</div>
+                                        <div class="sized-product col-span-3 uppercase">uk7</div>
+                                        <div class="sized-product col-span-3 uppercase">uk8</div>
+                                    </div>
+                                </div>
+
+                                <p
+                                    class="gradient-primary mt-5 text-white w-full rounded h-10 px-16 py-3 -translate-y-10">
+                                    <a class="h-full w-full" href="#"> add to bag</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-span-12 md:col-span-6 lg:col-span-3">
+                    <div class="contain gradient-primary w-full h-[340px]  rounded-lg  shadow-xl">
+                        <div class="card1 h-[100%] w-[100%] rounded-lg">
+                            <div class="imgbox">
+                                <img src="./assets/images/chair-card.png" alt="chair">
+                                <h1 class="uppercase font-semibold opacity-50 text-5xl text-center">chair</h1>
+                            </div>
+                            <div class="content-box space-y-3  px-4">
+                                <div class="flex items-center justify-between">
+                                    <p class="capitalize">chair</p>
+                                    <h2 class="text-gradient text-end">$240.99</h2>
+                                </div>
+                                <div class="size space-y-3 mb-10">
+                                    <h3 class="text-start">selected Size</h3>
+                                    <div class="grid grid-cols-12 gap-2">
+                                        <div class="sized-product col-span-3 uppercase">uk1</div>
+                                        <div class="sized-product col-span-3 uppercase">uk2</div>
+                                        <div class="sized-product col-span-3 uppercase">uk3</div>
+                                        <div class="sized-product col-span-3 uppercase">uk4</div>
+                                        <div class="sized-product col-span-3 uppercase">uk5</div>
+                                        <div class=" sized-product col-span-3 uppercase">uk6</div>
+                                        <div class="sized-product col-span-3 uppercase">uk7</div>
+                                        <div class="sized-product col-span-3 uppercase">uk8</div>
+                                    </div>
+                                </div>
+
+                                <p
+                                    class="gradient-primary mt-5 text-white w-full rounded h-10 px-16 py-3 -translate-y-10">
+                                    <a class="h-full w-full" href="#"> add to bag</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-span-12 md:col-span-6 lg:col-span-3">
+                    <div class="contain gradient-primary w-full h-[340px]  rounded-lg  shadow-xl">
+                        <div class="card1 h-[100%] w-[100%] rounded-lg">
+                            <div class="imgbox">
+                                <img src="./assets/images/chair-card.png" alt="chair">
+                                <h1 class="uppercase font-semibold opacity-50 text-5xl text-center">chair</h1>
+                            </div>
+                            <div class="content-box space-y-3  px-4">
+                                <div class="flex items-center justify-between">
+                                    <p class="capitalize">chair</p>
+                                    <h2 class="text-gradient text-end">$240.99</h2>
+                                </div>
+                                <div class="size space-y-3 mb-10">
+                                    <h3 class="text-start">selected Size</h3>
+                                    <div class="grid grid-cols-12 gap-2">
+                                        <div class="sized-product col-span-3 uppercase">uk1</div>
+                                        <div class="sized-product col-span-3 uppercase">uk2</div>
+                                        <div class="sized-product col-span-3 uppercase">uk3</div>
+                                        <div class="sized-product col-span-3 uppercase">uk4</div>
+                                        <div class="sized-product col-span-3 uppercase">uk5</div>
+                                        <div class=" sized-product col-span-3 uppercase">uk6</div>
+                                        <div class="sized-product col-span-3 uppercase">uk7</div>
+                                        <div class="sized-product col-span-3 uppercase">uk8</div>
+                                    </div>
+                                </div>
+
+                                <p
+                                    class="gradient-primary mt-5 text-white w-full rounded h-10 px-16 py-3 -translate-y-10">
+                                    <a class="h-full w-full" href="#"> add to bag</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-span-12 md:col-span-6 lg:col-span-3">
+                    <div class="contain gradient-primary w-full h-[340px]  rounded-lg  shadow-xl">
+                        <div class="card1 h-[100%] w-[100%] rounded-lg">
+                            <div class="imgbox">
+                                <img src="./assets/images/chair-card.png" alt="chair">
+                                <h1 class="uppercase font-semibold opacity-50 text-5xl text-center">chair</h1>
+                            </div>
+                            <div class="content-box space-y-3  px-4">
+                                <div class="flex items-center justify-between">
+                                    <p class="capitalize">chair</p>
+                                    <h2 class="text-gradient text-end">$240.99</h2>
+                                </div>
+                                <div class="size space-y-3 mb-10">
+                                    <h3 class="text-start">selected Size</h3>
+                                    <div class="grid grid-cols-12 gap-2">
+                                        <div class="sized-product col-span-3 uppercase">uk1</div>
+                                        <div class="sized-product col-span-3 uppercase">uk2</div>
+                                        <div class="sized-product col-span-3 uppercase">uk3</div>
+                                        <div class="sized-product col-span-3 uppercase">uk4</div>
+                                        <div class="sized-product col-span-3 uppercase">uk5</div>
+                                        <div class=" sized-product col-span-3 uppercase">uk6</div>
+                                        <div class="sized-product col-span-3 uppercase">uk7</div>
+                                        <div class="sized-product col-span-3 uppercase">uk8</div>
+                                    </div>
+                                </div>
+
+                                <p
+                                    class="gradient-primary mt-5 text-white w-full rounded h-10 px-16 py-3 -translate-y-10">
+                                    <a class="h-full w-full" href="#"> add to bag</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-span-12 md:col-span-6 lg:col-span-3">
+                    <div class="contain gradient-primary w-full h-[340px]  rounded-lg  shadow-xl">
+                        <div class="card1 h-[100%] w-[100%] rounded-lg">
+                            <div class="imgbox">
+                                <img src="./assets/images/chair-card.png" alt="chair">
+                                <h1 class="uppercase font-semibold opacity-50 text-5xl text-center">chair</h1>
+                            </div>
+                            <div class="content-box space-y-3  px-4">
+                                <div class="flex items-center justify-between">
+                                    <p class="capitalize">chair</p>
+                                    <h2 class="text-gradient text-end">$240.99</h2>
+                                </div>
+                                <div class="size space-y-3 mb-10">
+                                    <h3 class="text-start">selected Size</h3>
+                                    <div class="grid grid-cols-12 gap-2">
+                                        <div class="sized-product col-span-3 uppercase">uk1</div>
+                                        <div class="sized-product col-span-3 uppercase">uk2</div>
+                                        <div class="sized-product col-span-3 uppercase">uk3</div>
+                                        <div class="sized-product col-span-3 uppercase">uk4</div>
+                                        <div class="sized-product col-span-3 uppercase">uk5</div>
+                                        <div class=" sized-product col-span-3 uppercase">uk6</div>
+                                        <div class="sized-product col-span-3 uppercase">uk7</div>
+                                        <div class="sized-product col-span-3 uppercase">uk8</div>
+                                    </div>
+                                </div>
+
+                                <p
+                                    class="gradient-primary mt-5 text-white w-full rounded h-10 px-16 py-3 -translate-y-10">
+                                    <a class="h-full w-full" href="#"> add to bag</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-span-12 md:col-span-6 lg:col-span-3">
+                    <div class="contain gradient-primary w-full h-[340px]  rounded-lg  shadow-xl">
+                        <div class="card1 h-[100%] w-[100%] rounded-lg">
+                            <div class="imgbox">
+                                <img src="./assets/images/chair-card.png" alt="chair">
+                                <h1 class="uppercase font-semibold opacity-50 text-5xl text-center">chair</h1>
+                            </div>
+                            <div class="content-box space-y-3  px-4">
+                                <div class="flex items-center justify-between">
+                                    <p class="capitalize">chair</p>
+                                    <h2 class="text-gradient text-end">$240.99</h2>
+                                </div>
+                                <div class="size space-y-3 mb-10">
+                                    <h3 class="text-start">selected Size</h3>
+                                    <div class="grid grid-cols-12 gap-2">
+                                        <div class="sized-product col-span-3 uppercase">uk1</div>
+                                        <div class="sized-product col-span-3 uppercase">uk2</div>
+                                        <div class="sized-product col-span-3 uppercase">uk3</div>
+                                        <div class="sized-product col-span-3 uppercase">uk4</div>
+                                        <div class="sized-product col-span-3 uppercase">uk5</div>
+                                        <div class=" sized-product col-span-3 uppercase">uk6</div>
+                                        <div class="sized-product col-span-3 uppercase">uk7</div>
+                                        <div class="sized-product col-span-3 uppercase">uk8</div>
+                                    </div>
+                                </div>
+
+                                <p
+                                    class="gradient-primary mt-5 text-white w-full rounded h-10 px-16 py-3 -translate-y-10">
+                                    <a class="h-full w-full" href="#"> add to bag</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-span-12 md:col-span-6 lg:col-span-3">
+                    <div class="contain gradient-primary w-full h-[340px]  rounded-lg  shadow-xl">
+                        <div class="card1 h-[100%] w-[100%] rounded-lg">
+                            <div class="imgbox">
+                                <img src="./assets/images/chair-card.png" alt="chair">
+                                <h1 class="uppercase font-semibold opacity-50 text-5xl text-center">chair</h1>
+                            </div>
+                            <div class="content-box space-y-3  px-4">
+                                <div class="flex items-center justify-between">
+                                    <p class="capitalize">chair</p>
+                                    <h2 class="text-gradient text-end">$240.99</h2>
+                                </div>
+                                <div class="size space-y-3 mb-10">
+                                    <h3 class="text-start">selected Size</h3>
+                                    <div class="grid grid-cols-12 gap-2">
+                                        <div class="sized-product col-span-3 uppercase">uk1</div>
+                                        <div class="sized-product col-span-3 uppercase">uk2</div>
+                                        <div class="sized-product col-span-3 uppercase">uk3</div>
+                                        <div class="sized-product col-span-3 uppercase">uk4</div>
+                                        <div class="sized-product col-span-3 uppercase">uk5</div>
+                                        <div class=" sized-product col-span-3 uppercase">uk6</div>
+                                        <div class="sized-product col-span-3 uppercase">uk7</div>
+                                        <div class="sized-product col-span-3 uppercase">uk8</div>
+                                    </div>
+                                </div>
+
+                                <p
+                                    class="gradient-primary mt-5 text-white w-full rounded h-10 px-16 py-3 -translate-y-10">
+                                    <a class="h-full w-full" href="#"> add to bag</a>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="card col-span-12 md:col-span-6 lg:col-span-3">
-                    <div class="gradient-primary w-full h-[340px] rounded-lg ">
-                        <img src="./assets/images/chair-card.png" alt="chair" class="">
-                    </div>
-                </div>
+                    <div class="contain gradient-primary w-full h-[340px]  rounded-lg  shadow-xl">
+                        <div class="card1 h-[100%] w-[100%] rounded-lg">
+                            <div class="imgbox">
+                                <img src="./assets/images/chair-card.png" alt="chair">
+                                <h1 class="uppercase font-semibold opacity-50 text-5xl text-center">chair</h1>
+                            </div>
+                            <div class="content-box space-y-3  px-4">
+                                <div class="flex items-center justify-between">
+                                    <p class="capitalize">chair</p>
+                                    <h2 class="text-gradient text-end">$240.99</h2>
+                                </div>
+                                <div class="size space-y-3 mb-10">
+                                    <h3 class="text-start">selected Size</h3>
+                                    <div class="grid grid-cols-12 gap-2">
+                                        <div class="sized-product col-span-3 uppercase">uk1</div>
+                                        <div class="sized-product col-span-3 uppercase">uk2</div>
+                                        <div class="sized-product col-span-3 uppercase">uk3</div>
+                                        <div class="sized-product col-span-3 uppercase">uk4</div>
+                                        <div class="sized-product col-span-3 uppercase">uk5</div>
+                                        <div class=" sized-product col-span-3 uppercase">uk6</div>
+                                        <div class="sized-product col-span-3 uppercase">uk7</div>
+                                        <div class="sized-product col-span-3 uppercase">uk8</div>
+                                    </div>
+                                </div>
 
-                <div class="col-span-12 md:col-span-6 lg:col-span-3">
-                    <div class="gradient-primary w-full h-[340px] rounded-lg ">
-                        <img src="./assets/images/chair-card.png" alt="chair" class="">
-                    </div>
-                </div>
-
-                <div class="col-span-12 md:col-span-6 lg:col-span-3">
-                    <div class="gradient-primary w-full h-[340px] rounded-lg ">
-                        <img src="./assets/images/chair-card.png" alt="chair" class="">
-                    </div>
-                </div>
-
-                <div class="col-span-12 md:col-span-6 lg:col-span-3  ">
-                    <div class="gradient-primary w-full h-[340px] rounded-lg ">
-                        <img src="./assets/images/chair-card.png" alt="chair" class="">
+                                <p
+                                    class="gradient-primary mt-5 text-white w-full rounded h-10 px-16 py-3 -translate-y-10">
+                                    <a class="h-full w-full" href="#"> add to bag</a>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="frequent-questions" class="mt-56 bg-[#F5F5F5]">
+    <section id="frequent-questions" class="bg-[#F5F5F5]">
 
         <h1 class="capitalize text-6xl text-center pt-[110px] pb-[60px]">frequently asked <span
                 class="text-gradient">questions</span> </h1>
